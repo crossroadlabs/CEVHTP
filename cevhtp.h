@@ -21,3 +21,4 @@
 
 #include <evhtp.h>
 #include <htparse.h>
+#include <event2/thread.h>
