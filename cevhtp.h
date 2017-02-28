@@ -1,31 +1,24 @@
-//===--- module.modulemap --------------------------------------------------===//
+//===--- cevhtp.h  -------------------------------------------------------===//
 //
-//Copyright (c) 2015-2016 Daniel Leping (dileping)
+//Copyright (c) 2016 Daniel Leping (dileping)
 //
-//This file is part of Swift Express.
+//This file is part of CEVHTP.
 //
-//Swift Express is free software: you can redistribute it and/or modify
+//PathToRegex is free software: you can redistribute it and/or modify
 //it under the terms of the GNU Lesser General Public License as published by
 //the Free Software Foundation, either version 3 of the License, or
 //(at your option) any later version.
 //
-//Swift Express is distributed in the hope that it will be useful,
+//PathToRegex is distributed in the hope that it will be useful,
 //but WITHOUT ANY WARRANTY; without even the implied warranty of
 //MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 //GNU Lesser General Public License for more details.
 //
 //You should have received a copy of the GNU Lesser General Public License
-//along with Swift Express.  If not, see <http://www.gnu.org/licenses/>.
+//along with PathToRegex.  If not, see <http://www.gnu.org/licenses/>.
 //
 //===----------------------------------------------------------------------===//
 
-module CEVHTP [system] {
-	header "cevhtp.h"
-	link "evhtp"
-	link "ssl"
-	link "crypto"
-	link "event"
-	link "event_pthreads"
-	link "event_openssl"
-	export *
-}
+#include <evhtp.h>
+#include <htparse.h>
+#include <event2/thread.h>
