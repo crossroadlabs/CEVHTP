@@ -20,7 +20,7 @@
 //===----------------------------------------------------------------------===//
 
 module CEVHTP [system] {
-	header "cevhtp.h"
+	umbrella header "cevhtp.h"
 	link "evhtp"
 	link "ssl"
 	link "crypto"

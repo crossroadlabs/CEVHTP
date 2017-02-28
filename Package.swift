@@ -1,5 +1,10 @@
 import PackageDescription
 
 let package = Package(
-    name: "CEHVTP"
+    name: "CEHVTP",
+    pkgConfig: "evhtp",
+    providers: [
+        .Apt("libevhtp-dev"),
+        .Brew("libevhtp")
+    ]
 )
