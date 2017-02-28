@@ -20,8 +20,7 @@
 //===----------------------------------------------------------------------===//
 
 module CEVHTP [system] {
-	header "/usr/local/include/evhtp.h"
-	header "/usr/local/include/htparse.h"
+	umbrella header "cevhtp.h"
 	link "evhtp"
 	link "ssl"
 	link "crypto"
