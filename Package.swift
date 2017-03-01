@@ -6,5 +6,6 @@ let package = Package(
     providers: [
         .Apt("libevhtp-dev"),
         .Brew("libevhtp")
-    ]
+    ],
+    dependencies: [.Package(url: "https://github.com/crossroadlabs/CEvent.git", majorVersion: 0, minor: 1)]
 )

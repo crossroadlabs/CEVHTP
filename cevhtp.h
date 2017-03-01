@@ -19,6 +19,5 @@
 //
 //===----------------------------------------------------------------------===//
 
-#include <evhtp/evhtp.h>
-#include <evhtp/htparse.h>
-#include <event2/thread.h>
+#include <evhtp.h>
+#include <htparse.h>

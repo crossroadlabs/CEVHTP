@@ -22,10 +22,5 @@
 module CEVHTP [system] {
 	umbrella header "cevhtp.h"
 	link "evhtp"
-	link "ssl"
-	link "crypto"
-	link "event"
-	link "event_pthreads"
-	link "event_openssl"
 	export *
 }
